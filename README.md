@@ -3,9 +3,9 @@
 <h1>Documentation</h1>
 <p><b>MD5DeleteAll</b>()     Removes all keys and values from the preferences. Use with caution.</p>
 <p><b>MD5DeleteKey</b>(string <b>key</b>)     Removes key and its corresponding value from the preferences.</p>
-<p><b>MD5GetFloat</b>(string <b>key</b>)     Returns the value corresponding to key in the preference file if it exists.</p>
-<p><b>MD5GetInt</b>(string <b>key</b>)     Returns the value corresponding to key in the preference file if it exists.</p>
-<p><b>MD5GetString</b>(string <b>key</b>)     Returns the value corresponding to key in the preference file if it exists.</p>
+<p><b>MD5GetFloat</b>(string <b>key</b>, optional float <b>defaultValue</b>)     Returns the value corresponding to key in the preference file if it exists.</p>
+<p><b>MD5GetInt</b>(string <b>key</b>, optional int <b>defaultValue</b>)     Returns the value corresponding to key in the preference file if it exists.</p>
+<p><b>MD5GetString</b>(string <b>key</b>, optional string <b>defaultValue</b>)     Returns the value corresponding to key in the preference file if it exists.</p>
 <p><b>MD5HasKey</b>(string <b>key</b>)     Returns true if key exists in the preferences.</p>
 <p><b>MD5Save</b>()     Writes all modified preferences to disk.</p>
 <p><b>MD5SetFloat</b>(string <b>key</b>, float <b>value</b>)     Sets the value of the preference identified by key.</p>
