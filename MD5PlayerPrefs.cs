@@ -30,14 +30,7 @@ public class MD5PlayerPrefs
         PlayerPrefs.SetFloat(md5(key), value);
     }
 
-    public static float GetFloat(string key)
-    {
-        string keyMD5 = md5(key);
-        if (HasKey(keyMD5)) return PlayerPrefs.GetFloat(keyMD5);
-        else return 0.0f;
-    }
-
-    public static float GetFloat(string key, float defaultValue)
+    public static float GetFloat(string key, float defaultValue = 0.0f)
     {
         string keyMD5 = md5(key);
         if (HasKey(keyMD5)) return PlayerPrefs.GetFloat(keyMD5);
@@ -49,14 +42,7 @@ public class MD5PlayerPrefs
         PlayerPrefs.SetInt(md5(key), value);
     }
 
-    public static int GetInt(string key)
-    {
-        string keyMD5 = md5(key);
-        if (HasKey(keyMD5)) return PlayerPrefs.GetInt(keyMD5);
-        else return 0;
-    }
-
-    public static int GetInt(string key, int defaultValue)
+    public static int GetInt(string key, int defaultValue = 0)
     {
         string keyMD5 = md5(key);
         if (HasKey(keyMD5)) return PlayerPrefs.GetInt(keyMD5);
@@ -68,14 +54,7 @@ public class MD5PlayerPrefs
         PlayerPrefs.SetString(md5(key), value);
     }
 
-    public static string GetString(string key)
-    {
-        string keyMD5 = md5(key);
-        if (HasKey(keyMD5)) return PlayerPrefs.GetString(keyMD5);
-        else return "";
-    }
-
-    public static string GetString(string key, string defaultValue)
+    public static string GetString(string key, string defaultValue = "")
     {
         string keyMD5 = md5(key);
         if (HasKey(keyMD5)) return PlayerPrefs.GetString(keyMD5);
